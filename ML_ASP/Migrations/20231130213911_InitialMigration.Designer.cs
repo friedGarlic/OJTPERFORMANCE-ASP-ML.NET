@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ML_ASP.Migrations
 {
     [DbContext(typeof(ML_DBContext))]
-    [Migration("20231129133259_InitialMigration")]
+    [Migration("20231130213911_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -25,11 +25,18 @@ namespace ML_ASP.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ML_ASP.Models.Accounts.Account_Model", b =>
+            modelBuilder.Entity("ML_ASP.Models.Account_Model", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()

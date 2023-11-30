@@ -153,25 +153,29 @@
 
 
     <main class="form-signin w-50 m-auto">
-        <form>
+        <form method="post">
             <img class="mb-4" src="~/assets/brand/analysis.png" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
             <div class="mb-4 form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+                <input asp-for="Username" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label >Email address</label>
+                <span asp-validation-for="Username" class="text-danger"></span>
             </div>
             <div class="mb-4 form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
+                <input asp-for="Password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label >Password</label> 
+                <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="mb-4 form-floating">
-                <input type="name" class="form-control" id="floatingInput" placeholder="Full Name">
-                <label for="floatingInput">Full Name</label>
+                <input asp-for="FullName" type="text" class="form-control" id="floatingInput" placeholder="Full Name">
+                <label >Full Name</label>
+                <span asp-validation-for="FullName" class="text-danger"></span>
             </div>
             <div class="mb-4 form-floating">
-                <input type="age" class="form-control" id="floatingInput" placeholder="Age">
-                <label for="floatingInput">Age</label>
+                <input asp-for="Age" type="number" class="form-control" id="floatingInput" placeholder="Age">
+                <label>Age</label>
+                <span asp-validation-for="Age" class="text-danger"></span>
             </div>
 
             <button class="btn btn-primary w-100 py-2 mb-3" type="submit">Submit</button>
