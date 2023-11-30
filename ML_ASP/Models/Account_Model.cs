@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ML_ASP.Models.Accounts
+namespace ML_ASP.Models
 {
     public class Account_Model
     {

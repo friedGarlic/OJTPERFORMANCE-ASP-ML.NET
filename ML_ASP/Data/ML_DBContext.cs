@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ML_ASP.Models;
-using ML_ASP.Models.Accounts;
 
 namespace ML_ASP.Data
 {

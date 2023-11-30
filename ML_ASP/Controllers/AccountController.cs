@@ -14,7 +14,16 @@ namespace ML_ASP.Controllers
 
         public IActionResult Index()
         {
-            var obj = _dbContext.Accounts.ToList();
+            return View();
+        }
+
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+
+        public IActionResult SignUp()
+        {
             return View();
         }
     }
