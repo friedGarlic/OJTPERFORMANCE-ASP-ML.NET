@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace ML_ASP.Models
 {
@@ -6,7 +7,11 @@ namespace ML_ASP.Models
     {
         [Key]
         public Guid Id { get; set; }
+
+        [Range(18,50)]
         public int Age { get; set; }
+
+        [DisplayName("Full Name")]
         public string FullName { get; set; }
 
         [Required]
