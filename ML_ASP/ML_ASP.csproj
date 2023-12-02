@@ -9,6 +9,7 @@
   <ItemGroup>
     <None Include="wwwroot\assets\brand\bootstrap-logo-white.svg" />
     <None Include="wwwroot\assets\brand\bootstrap-logo.svg" />
+    <None Include="wwwroot\assets\brand\PSA.jpg" />
     <None Include="wwwroot\css\signIn.css" />
   </ItemGroup>
 
