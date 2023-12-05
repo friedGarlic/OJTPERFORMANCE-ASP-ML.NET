@@ -16,12 +16,16 @@
     <div class="d_container">
         <aside>
             <div class="toggle">
-                <img src="~/assets/dashboard/logo-black.png" />
-            </div>
-            <div class="close" id="close-btn">
-                <span class="material-symbols-outlined">
-                    close
-                </span>
+                    <div class="logo">
+                    <img src="~/assets/dashboard/logo-black.png" />
+                </div>
+                <!--
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </div>
+                -->
             </div>
 
             <!--SIDEBAR!!-->
@@ -30,9 +34,9 @@
                     <span class="material-symbols-outlined">
                         topic
                     </span>
-                    <h2>File Management/Module Submition</h2>
+                    <h2>Files</h2>
                 </a>
-                <a href="#">
+                <a href="#" class="active">
                     <span class="material-symbols-outlined">
                         analytics
                     </span>
@@ -55,6 +59,47 @@
             <!--END OF SIDEBAR-->
 
         </aside>
+
+        <!--Main Content-->
+        <main>
+            <h1> Analytics</h1>
+            <div class="analysis">
+                <div class="hrs-remaining">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Hours Remaining</h3>
+                            <h1>200 Hours</h1>
+                        </div>
+                        <div class="progress">
+                            <svg> 
+                                <circle cx="38" cy="40" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>80%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hrs-completed">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Hours Completed</h3>
+                            <h1>5 Hours</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="40" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>2%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- end of main content-->
+
     </div>
     <script href="~/js/site.js"></script>
 </body>
