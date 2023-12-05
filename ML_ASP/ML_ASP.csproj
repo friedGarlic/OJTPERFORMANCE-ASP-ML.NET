@@ -24,8 +24,4 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\Accounts\" />
-  </ItemGroup>
-
 </Project>

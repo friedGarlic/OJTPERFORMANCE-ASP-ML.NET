@@ -60,7 +60,7 @@
 
 .item:nth-child(n+6) {
     left: calc(50% + 660px);
-    opacity: 0;
+    opacity: 1;
 }
 
 .item:nth-child(2) .content{
@@ -79,8 +79,6 @@
     transform: translate(0, -50%);
     display: none;
 }
-
-
 
 .item .name{
     font-family: system-ui;

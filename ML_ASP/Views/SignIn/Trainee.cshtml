@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "Trainee";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trainee Dashboard</title>
+    <link rel="stylesheet" href="~/css/trainee_dashboard.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="d_container">
+        <aside>
+            <div class="toggle">
+                <img src="~/assets/dashboard/logo-black.png" />
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+
+            <!--SIDEBAR!!-->
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        topic
+                    </span>
+                    <h2>File Management/Module Submition</h2>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        analytics
+                    </span>
+                    <h2>Prediction</h2>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <h2>Mails</h2>
+                    <span class="message-count">3</span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        logout
+                    </span>
+                    <h2>Log Out</h2>
+                </a>
+            </div>
+            <!--END OF SIDEBAR-->
+
+        </aside>
+    </div>
+    <script href="~/js/site.js"></script>
+</body>
+</html>
