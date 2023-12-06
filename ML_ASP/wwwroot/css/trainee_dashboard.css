@@ -110,24 +110,37 @@ b{
 .warning{
     color: var(--color-warning);
 }
-@media screen and (min-width:1600px) {
-    .d_container {
-        display: grid;
-        width: 96%;
-        margin: 0 auto;
-        transform: translate(-30%, 0);
-        gap: 1.8rem;
-        grid-template-columns: 25rem 0 23rem;
+
+.d_container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+}
+
+@media screen and (min-width: 1200px) {
+    aside {
+        transform: translate(-12%, 0);
+    }
+
+    main .analysis {
+        transform:translate(-70%,0);
+    }
+    aside {
+        height: 90vh;
+    }
+    #footer{
+        display: none;
     }
 }
-@media screen and (max-width:900px) {
-    .d_container {
-        display: grid;
-        width: 96%;
-        margin: 0 auto;
-        transform: translate(0, 0);
-        gap: 1.8rem;
-        grid-template-columns: 25rem 0 23rem;
+
+@media screen and (min-width: 1600px) {
+    aside {
+        transform: translate(-60%, 0);
+    }
+    main .analysis {
+        transform: translate(-100%,0);
     }
 }
 
@@ -229,13 +242,13 @@ aside .sidebar .message-count{
 
 
 main{
-    margin-top: 1.4rem;
+    margin-top: .4rem;
 }
 
 main .analysis{
-    display: grid;
+    display: flex;
     grid-template-columns:repeat(3, 1fr);
-    gap: 1.6rem;
+    gap: 3.6rem;
 }
 
 main .analysis > div{
@@ -248,7 +261,7 @@ main .analysis > div{
     transition: all 0.3s ease;
 }
 
-main .analysis > dive:hover{
+main .analysis > div:hover{
     box-shadow: none;
 }
 
@@ -265,7 +278,7 @@ main .analysis h3{
 
 main .analysis .progress{
     position: relative;
-    width: 92px;
+    width: 110px;
     height: 92px;
     border-radius: 50%;
 }
@@ -291,7 +304,18 @@ main .analysis .hrs-remaining svg circle{
 main .analysis .hrs-completed svg circle{
     stroke: var(--color-primary);
     stroke-dashoffset: -30;
-    stroke-dasharray: 200;
+    stroke-dasharray: 100;
+}
+
+main .analysis span{
+    transform: translate(30%, 19%);
+    font-size: 64px;
+}
+
+main .analysis .task-completed .task-progress span{
+    transform: translate(40%, -30%);
+    font-size: 64px;
+    width: 100px;
 }
 
 main .analysis .progress .percentage{
