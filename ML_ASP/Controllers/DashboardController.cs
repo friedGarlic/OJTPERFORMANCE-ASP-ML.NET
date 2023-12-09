@@ -2,7 +2,7 @@
 
 namespace ML_ASP.Controllers
 {
-    public class SignInController : Controller
+    public class DashboardController : Controller
     {
         public IActionResult Index()
         {
@@ -10,6 +10,11 @@ namespace ML_ASP.Controllers
         }
 
         public IActionResult Trainee()
+        {
+            return View();
+        }
+
+        public IActionResult FileManagement()
         {
             return View();
         }
