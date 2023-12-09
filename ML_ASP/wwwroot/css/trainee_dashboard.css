@@ -328,3 +328,51 @@ main .analysis .progress .percentage{
     height: 100%;
     width: 100%;
 }
+
+.charts{
+    position: relative;
+    background-color: var(--color-background);
+    width: 760px;
+    padding: 25px;
+    border-radius: var(--border-radius-1);
+    box-shadow: 16px;
+    box-shadow: var(--box-shadow);
+    transform: translate(-80%, 20%);
+}
+
+.charts .pulse{
+    position: absolute;
+    background: #3498db;
+    width: 14px;
+    height: 14px;
+    right: 31px;
+    top: 35px;
+    border-radius: var(--border-radius-2);
+}
+
+.charts .pulse::after
+{
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-1);
+    border: 0.1px solid #3498db;
+    transform-origin: center;
+    opacity: 0.8;
+    scale: 0;
+    animation: pulse 3s center;
+}
+
+@keyframes pulse{
+    70%{
+        scale: 0;
+        opacity: 0.8;
+    }
+    100%{
+        scale: 3;
+        opacity: 0;
+    }
+}

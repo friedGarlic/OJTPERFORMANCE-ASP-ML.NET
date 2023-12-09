@@ -9,11 +9,6 @@ namespace ML_ASP.Controllers
             return View();
         }
 
-        public IActionResult Create()
-        {
-            return View();
-        }
-
         public IActionResult Trainee()
         {
             return View();
